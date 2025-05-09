@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Australian Shepherd Club of the Western Cape</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon/favicon.ico">
+<link rel="icon" type="image/png" href="images/favicon/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="images/favicon/favicon-32x32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="images/favicon/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" type="image/png" href="images/favicon/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="images/favicon/android-chrome-512x512.png" sizes="512x512">
+<link rel="manifest" href="images/favicon/site.webmanifest">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="bgimg-3">
+    <div class="caption">
+    <span class="border">ABOUT THE AUSSIE</span>
+    </div>
+  </div>
+<!-- Loader -->
+<div id="loader">
+  <div class="spinner"></div>
+</div>
+
+<!-- Nav -->
+<nav>
+  <div class="logo">
+    <span class="club-logo">
+      <img src="logo.png" alt="Club Logo">
+    </span>
+    <span class="logo-text">Australian Shepherd Club of the<br>Western Cape</span>
+  </div>
+  <div class="hamburger" onclick="toggleMenu()" aria-expanded="false">
+    <div></div><div></div><div></div>
+  </div>
+  <ul id="navLinks">
+    <li><a href="index.html">Home</a></li>
+
+    <li class="dropdown">
+      <a href="about.html">About</a>
+      <ul class="dropdown-content">
+        <li><a href="about.html#history">Club History</a></li>
+        <li><a href="about.html#mission">Mission and Values</a></li>
+        <li><a href="about.html#team">Committee Team</a></li>
+      </ul>
+    </li>
+
+    <li class="dropdown">
+      <a href="aboutbreed.html">About the Breed</a>
+      <ul class="dropdown-content">
+        <li><a href="aboutbreed.html#auhistory">Aussie History</a></li>
+        <li><a href="aboutbreed.html#traits">Breed Traits</a></li>
+        <li><a href="aboutbreed.html#kusa">Kusa Breed Standard</a></li>
+        <li><a href="aboutbreed.html#living">Living with an Aussie</a></li>
+        <li><a href="aboutbreed.html#work">Work & Play</a></li>
+        <li><a href="aboutbreed.html#right">Is an Aussie Right for You?</a></li>
+      </ul>
+    </li>
+
+    <li class="dropdown">
+      <a href="events.html">Events</a>
+      <ul class="dropdown-content">
+        <li><a href="events.html#upcomming">Upcoming - Kusa Nationals</a></li>
+        <li><a href="events.html#events">Event Details</a></li>
+        <li><a href="events.html#past">Past Events & Results</a></li>
+        <li><a href="events.html#what">What to Expect at a Dog Show</a></li>
+      </ul>
+    </li>
+
+    <li class="dropdown">
+      <a href="membership.html">Membership</a>
+
+    </li>
+
+    <li class="dropdown">
+      <a href="breeders.html">Breeders</a>
+      <ul class="dropdown-content">
+        <li><a href="breeders.html#puppy">Puppy Buying Tips including Breeder Listing</a></li>
+        <li><a href="breeders.html#ethics">Ethical Behaviour of Breeders Who Register with KUSA</a></li>
+      </ul>
+    </li>
+
+    <li class="dropdown">
+      <a href="health.html">Health</a>
+      <ul class="dropdown-content">
+        <li><a href="health.html#health">Health Issues and What to Look Out For</a></li>
+      </ul>
+    </li>
+
+    <li class="dropdown">
+      <a href="grooming.html">Grooming</a>
+      <ul class="dropdown-content">
+        <li><a href="grooming.html#grooming">Grooming Needs</a></li>
+      </ul>
+    </li>
+
+    <li class="dropdown">
+      <a href="contact.html">Contact</a>
+      <ul class="dropdown-content">
+        <li><a href="contact.html#contact">General Contact Form</a></li>
+        <li><a href="contact.html#contact">Links to Email Addresses</a></li>
+        <li><a href="contact.html#contact">Assaro</a></li>
+        <li><a href="contact.html#contact">Kusa</a></li>
+      </ul>
+    </li>
+
+    <li class="dropdown">
+      <a href="gallery.html">Gallery</a>
+      <ul class="dropdown-content">
+        <li><a href="gallery.html#action">Dogs in Action</a></li>
+        <li><a href="gallery.html#shows">Show Dogs</a></li>
+      </ul>
+    </li>
+
+    <li><a href="sponsors.html">Sponsors</a></li>
+  </ul>
+</nav>
+
+
+
+  <div class="box-container">
+    <div class="info-box" data-target="auhistory">Aussie History</div>
+    <div class="info-box" data-target="traits">Breed Traits</div>
+    <div class="info-box" data-target="kusa">KUSA Breed Standard</div>
+    <div class="info-box" data-target="living">Living With a Aussie Puppy</div>
+    <div class="info-box" data-target="work">Work and Play</div>
+    <div class="info-box" data-target="right">Is a Aussie Right For You?</div>
+  </div>
+
+  <div id="auhistory" class="content-area">
+    <h2>About the Australian Shepherd</h2>
+    <p>The Australian Shepherd, affectionately called the "Aussie," has a history that’s a bit of a misdirect—despite the name, the breed didn’t actually originate in Australia. Its development is more closely tied to the United States.</p>
+  
+    <h3>Origins & Name Confusion</h3>
+    <div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
+
+      <div style="flex: 1 1 300px;">
+        <ul>
+          <li><strong>Basque Roots:</strong> The breed’s ancestors were likely brought to the U.S. by Basque shepherds from the Pyrenees region of Spain and France.</li>
+          <li>These shepherds had migrated to Australia in the 1800s and then to the U.S., especially California.</li>
+          <li>When Americans saw these dogs with the herders and sheep, they nicknamed them "Australian Shepherds."</li>
+        </ul>
+      </div>
+      <div class="image-content">
+        <img src="images/site/history.jpg" alt="Australian Shepherd history">
+        <p class="credit">Image:AKC Library and Archives</p>
+      </div>
+    </div>
+  
+    <h3>Development in the American West</h3>
+    <div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
+
+      <div style="flex: 1 1 300px;">
+        <p>American ranchers bred Aussies for <strong>working ability</strong>, not looks, focusing on traits like:</p>
+        <ul>
+          <li>Intelligence</li>
+          <li>Stamina</li>
+          <li>Agility</li>
+          <li>Strong herding instinct</li>
+        </ul>
+        <p>They became favorites among cowboys, especially in California, Idaho, and Colorado.</p>
+      </div>
+      <div class="image-content">
+        <img src="images/site/heard.jpg" alt="Australian Shepherd hearding">
+        <p class="credit">Image:Julia Siomuha?Getty Images Plus</p>
+      </div>
+    </div>
+  
+    <h3>Rise in Popularity</h3>
+    <p>In the mid-1900s, Aussies gained attention at rodeos and horse shows for their tricks and smarts, boosting their popularity as both working and companion dogs.</p>
+  
+    <h3>Recognition</h3>
+    <p>The American Kennel Club (AKC) officially recognized the breed in <strong>1993</strong>. Today, they’re known for their roles in herding, agility, service work, and obedience sports.</p>
+  
+    <h3>Key Traits</h3>
+    <ul>
+      <li>Highly intelligent; needs constant mental & physical stimulation</li>
+      <li>Striking appearance: merle coats, blue/amber eyes, often bobbed tails</li>
+      <li>Loyal and energetic; great with families but may be wary of strangers</li>
+    </ul>
+  
+    <h3>Personality & Temperament</h3>
+    <div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
+
+      <div style="flex: 1 1 300px;">
+        <p>Aussies are the <strong>Einsteins of the dog world</strong>—smart, active, and eager to work.</p>
+        <ul>
+          <li><strong>Intelligent & Trainable:</strong> Learn quickly, love challenges</li>
+          <li><strong>Energetic & Playful:</strong> Need lots of exercise—running, hiking, frisbee</li>
+          <li><strong>Loyal & Affectionate:</strong> Stick close to their people (“velcro dogs”)</li>
+          <li><strong>Protective:</strong> Alert watchdogs, not aggressive but cautious</li>
+          <li><strong>Herding Instinct:</strong> May try to herd kids or pets—instinct, not aggression</li>
+        </ul>
+      </div>
+      <div class="image-content">
+        <img src="images/site/loyal.jpg" alt="Australian Shepherd loyal">
+        <p class="credit">Image:Facebook</p>
+      </div>
+    </div>
+
+    <h3>Care Needs</h3>
+    <strong>Exercise:</strong>
+    <ul>
+      <li>At least 1–2 hours of daily physical activity</li>
+      <li>Needs mental challenges: puzzle toys, training games</li>
+    </ul>
+
+    <strong>Grooming:</strong>
+    <ul>
+      <li>Double coat: Brush 2–3x/week</li>
+      <li>More frequent grooming during seasonal shedding</li>
+    </ul>
+
+    <strong>Health:</strong>
+    <ul>
+      <li>Generally healthy but prone to: hip dysplasia, epilepsy, Collie eye anomaly, MDR1 gene issues, cancer</li>
+      <li><strong>Lifespan:</strong> 12–15 years</li>
+    </ul>
+
+    <strong>Best For:</strong>
+    <p>Active individuals, hikers, runners, or families with space. Not ideal for apartments unless heavily exercised and mentally stimulated.</p>
+
+    <hr>
+
+    <h3>Quick Breed Comparison</h3>
+    <div class="breed-comparison-table">
+      <table>
+        <thead>
+          <tr>
+            <th>Trait</th>
+            <th>Australian Shepherd</th>
+            <th>Border Collie</th>
+            <th>Australian Cattle Dog</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Origin</td>
+            <td>USA (via Basque/Aussie dogs)</td>
+            <td>British Isles (Scotland/England)</td>
+            <td>Australia</td>
+          </tr>
+          <tr>
+            <td>Main Job</td>
+            <td>Herding sheep & cattle</td>
+            <td>Precision herding, sheep trials</td>
+            <td>Herding cattle over rough terrain</td>
+          </tr>
+          <tr>
+            <td>Intelligence</td>
+            <td>Extremely smart</td>
+            <td>Smartest breed</td>
+            <td>Problem-solving, clever</td>
+          </tr>
+          <tr>
+            <td>Energy Level</td>
+            <td>High</td>
+            <td>Nuclear-level high</td>
+            <td>High with endurance</td>
+          </tr>
+          <tr>
+            <td>Work Drive</td>
+            <td>Hardworking but relaxed</td>
+            <td>Obsessive focus</td>
+            <td>Tough and determined</td>
+          </tr>
+          <tr>
+            <td>Sociability</td>
+            <td>Friendly, velcro dog</td>
+            <td>Aloof, reserved</td>
+            <td>Loyal, independent</td>
+          </tr>
+          <tr>
+            <td>Trainability</td>
+            <td>Eager and responsive</td>
+            <td>Needs challenge</td>
+            <td>Needs firm leadership</td>
+          </tr>
+          <tr>
+            <td>Living Situation</td>
+            <td>Best with space</td>
+            <td>Needs heavy stimulation</td>
+            <td>Needs work or tasks</td>
+          </tr>
+          <tr>
+            <td>Coat & Grooming</td>
+            <td>Fluffy double coat</td>
+            <td>Smooth or rough coat</td>
+            <td>Short weatherproof coat</td>
+          </tr>
+          <tr>
+            <td>Lifespan</td>
+            <td>12–15 years</td>
+            <td>12–15 years</td>
+            <td>12–16 years</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  </div>
+
+  <div id="traits" class="content-area">
+    <h2>Australian Shepherd Breed Traits</h2>
+  <p><strong>Energetic, intelligent, and endlessly loyal</strong> — Australian Shepherds are truly one-of-a-kind companions.</p>
+
+  <div class="info-section">
+    <div class="text-content">
+      <h3>Size and Appearance</h3>
+      <ul>
+        <li><strong>Height:</strong> 51–58 cm (males), 46–53 cm (females)</li>
+        <li><strong>Weight:</strong> 16–32 kg</li>
+        <li><strong>Coat:</strong> Medium-length, weather-resistant double coat; straight to wavy texture</li>
+        <li><strong>Colors:</strong> Blue merle, red merle, black, or red — often with white markings and/or tan points</li>
+        <li><strong>Eyes:</strong> Blue, brown, amber, or a mix — heterochromia (two different colors) is common</li>
+      </ul>
+    </div>
+    <div class="image-content">
+      <img src="images/site/colours.jpg" alt="Australian Shepherd color varieties">
+      <p class="credit">Image:Facebook</p>
+    </div>
+  </div>
+  
+  <div class="info-section">
+    <div class="text-content">
+      <h3>Temperament</h3>
+      <ul>
+        <li><strong>Intelligent:</strong> Thrives on mental stimulation and tasks</li>
+        <li><strong>Energetic:</strong> Needs daily physical activity; loves active lifestyles</li>
+        <li><strong>Loyal:</strong> Forms deep bonds with their families — "Velcro dogs"</li>
+        <li><strong>Protective:</strong> Naturally wary of strangers, great watchdogs without aggression</li>
+        <li><strong>Versatile:</strong> Excels in various roles — from herding to cuddling</li>
+      </ul>
+    </div>
+    <div class="image-content">
+      <img src="images/site/temperament.jpg" alt="Australian Shepherd color varieties">
+      <p class="credit">Image: T White</p>
+    </div>
+  </div>
+  
+  <div class="info-section">
+    <div class="text-content">
+      <h3>Exercise Needs</h3>
+      <ul>
+        <li>Minimum of 1–2 hours of vigorous exercise daily</li>
+        <li><strong>Favorite activities:</strong> Herding, frisbee, agility, obedience, hiking, and running</li>
+        <li>Lack of stimulation can lead to boredom and destructive behavior</li>
+      </ul>
+    </div>
+    <div class="image-content">
+      <img src="images/site/excercise.jpg" alt="Australian Shepherd color varieties">
+      <p class="credit">Image: S. Jacoby</p>
+    </div>
+  </div>
+  
+  <div class="info-section">
+    <div class="text-content">
+      <h3>Trainability</h3>
+      <ul>
+        <li><strong>Highly trainable:</strong> Quick learners and responsive to commands</li>
+        <li><strong>Eager to please:</strong> Respond best to praise and rewards</li>
+        <li><strong>Needs mental challenges:</strong> Puzzle toys and advanced training keep them sharp</li>
+      </ul>
+    </div>
+    <div class="image-content">
+      <img src="images/site/train.jpg" alt="Australian Shepherd color varieties">
+      <p class="credit">Image: S. Jacoby</p>
+    </div>
+  </div>
+  
+  <div class="info-section">
+    <div class="text-content">
+      <h3>Grooming</h3>
+      <ul>
+        <li>Brush weekly (increase during seasonal sheds)</li>
+        <li>Occasional baths as needed</li>
+        <li>Routine nail trimming, dental care, and ear cleaning recommended</li>
+      </ul>
+    </div>
+    <div class="image-content">
+      <img src="images/site/groom.jpg" alt="Australian Shepherd color varieties">
+      <p class="credit">Image: M. de Klerk</p>
+    </div>
+  </div>
+  
+  <div class="info-section">
+    <div class="text-content">
+      <h3>Health</h3>
+      <ul>
+        Generally healthy, but may be prone to:
+        <ul>
+          <li>Hip and elbow dysplasia</li>
+          <li>Eye disorders (e.g. cataracts, Collie Eye Anomaly)</li>
+          <li>MDR1 gene mutation (drug sensitivity — test recommended)</li>
+          <li>Epilepsy and certain cancers</li>
+        </ul>
+        <li><strong>Lifespan:</strong> 12–15 years</li>
+      </ul>
+    </div>
+    <div class="image-content">
+      <img src="images/site/healtha.jpg" alt="Australian Shepherd color varieties">
+      <p class="credit">Image: VR. Dwen</p>
+    </div>
+  </div>
+  
+  </div>
+
+
+
+  <div id="kusa" class="content-area">
+    <a href="pdf/breed_standard.pdf" download target="_blank" style="text-decoration: none; color: inherit;">
+      <div class="kusa-content">
+        <h3>KUSA Breed Standard</h3>
+        <p>Click here to download the official PDF.</p>
+      </div>
+    </a>
+  </div>
+
+  <div id="living" class="content-area">
+    <h2>Living with an Australian Shepherd Puppy</h2>
+    <p><strong>Living with an Australian Shepherd puppy</strong> is kind of like bringing home a tiny tornado with a PhD in mischief and a heart of gold. They’re absolutely adorable—but they come with a whole lot of energy, intelligence, and attitude. Here's a real-life peek at what it's like:</p>
+  
+    <!-- First image block -->
+    <div class="info-block">
+      <div class="info-text">
+        <h3>The First Thing You Notice: That Energy</h3>
+        <ul>
+          <li>Aussie pups are go-go-go from the start. They don’t lie around—they want action.</li>
+          <li>Expect zoomies down hallways, toys scattered everywhere, and ankle-herding attempts.</li>
+        </ul>
+      </div>
+      <div class="image-content">
+        <img src="images/site/puppy.jpg" alt="Energetic Aussie pup">
+        <p class="credit">Image: J. Harris</p>
+      </div>
+    </div>
+  
+    <h3>Too Smart for Their Own Good</h3>
+    <ul>
+      <li>These pups are brilliant—think “can open the cabinet” smart.</li>
+      <li>They quickly learn commands… and how to bend the rules you set.</li>
+      <li>Without mental stimulation, they’ll invent games like chewing shoes or redecorating your furniture.</li>
+    </ul>
+  
+    <!-- Second image block -->
+    <div class="info-block">
+      <div class="info-text">
+        <h3>Velcro Mode Activated</h3>
+        <ul>
+          <li>Aussies bond tightly and want to be wherever you are.</li>
+          <li>Your puppy will follow you everywhere—from bathroom trips to mail runs.</li>
+          <li>They thrive on connection, so early bonding matters a lot.</li>
+        </ul>
+      </div>
+      <div class="image-content">
+        <img src="images/site/puppy1.jpg" alt="Velcro Aussie">
+        <p class="credit">Image: J. Harris</p>
+      </div>
+    </div>
+  
+    <h3>Training is a Must (and a Joy)</h3>
+    <ul>
+      <li>They love learning and genuinely need it to stay happy and healthy.</li>
+      <li>Start early with short, fun training sessions—basic commands, crate training, socialization.</li>
+      <li>Aussies shine in tricks, agility, and games like hide-and-seek or puzzle toys.</li>
+    </ul>
+  
+    <!-- Third image block -->
+    <div class="info-block">
+      <div class="info-text">
+        <h3>Sleepy Snuggles (When They Finally Crash)</h3>
+        <ul>
+          <li>After the chaos, nothing beats watching an Aussie pup passed out in a goofy pose.</li>
+          <li>They’re affectionate, cuddly, and love snoozing near (or on) their people.</li>
+        </ul>
+      </div>
+      <div class="image-content">
+        <img src="images/site/puppy2.jpg" alt="Sleepy Aussie puppy">
+        <p class="credit">Image: J. Harris</p>
+      </div>
+    </div>
+  
+    <h3>What to Be Prepared For</h3>
+    <ul>
+      <li>Destructive boredom if they’re under-stimulated or left alone too long</li>
+      <li>Herding behavior: nipping at heels, circling children or pets</li>
+      <li>Separation anxiety if independence isn’t taught early</li>
+    </ul>
+  
+    <h3>Bottom Line</h3>
+    <p><strong>Living with an Aussie puppy is a wild ride</strong> full of laughs, learning, and love. They’re not low-maintenance, but if you’re ready to put in the time and energy, you’ll have one of the most loyal, clever, and entertaining companions you’ll ever meet.</p>
+  </div>
+  
+
+  <div id="work" class="content-area">
+    <h2>Australian Shepherds at Work and Play</h2>
+    <p>Australian Shepherds are famous for their incredible work ethic, intelligence, and boundless energy. Originally bred as versatile working dogs, Aussies thrive when they have a job to do — whether that’s herding livestock, competing in sports, or being an active family companion.</p>
+  
+    <h3>Traditional Jobs</h3>
+    <ul>
+      <li><strong>Herding:</strong> Aussies excel at moving sheep, cattle, and even ducks. Their natural instincts, quick thinking, and ability to work independently make them outstanding farm dogs.</li>
+      <li><strong>Search and Rescue / Detection Work:</strong> With keen noses, agility, and stamina, some Aussies are trained for search and rescue missions, drug detection, and even service work.</li>
+      <li><strong>Therapy and Service Dogs:</strong> Their sensitivity and bond with humans make them great for therapy visits in hospitals and nursing homes, or as specialized service animals.</li>
+    </ul>
+  
+    <!-- First image block -->
+    <div class="info-block">
+      <div class="info-text">
+        <h3>Modern Sports and Activities</h3>
+        <ul>
+          <li><strong>Agility:</strong> Aussies shine on agility courses — weaving poles, leaping hurdles, and zipping through tunnels. It’s great for bonding and energy release.</li>
+          <li><strong>Flyball:</strong> Fast and focused, Aussies often dominate this relay-style race that combines hurdles, ball retrieval, and teamwork.</li>
+          <li><strong>Obedience and Rally Trials:</strong> Their intelligence and desire to please make Aussies strong competitors in events focused on precision and teamwork.</li>
+          <li><strong>Trick Training and Dog Sports:</strong> Aussies enjoy learning new tricks, scent work, disc dog (frisbee), and mentally engaging activities.</li>
+        </ul>
+      </div>
+      <div class="image-content">
+        <img src="images/site/jump.jpg" alt="Australian Shepherd playing sport">
+        <p class="credit">Image: j. Harris</p>
+      </div>
+    </div>
+  
+    <h3>Why Aussies Need Jobs</h3>
+    <p>Without enough physical and mental stimulation, an Aussie can become bored — and a bored Aussie may invent their own job (like redecorating your garden or chewing on shoes!). Keeping them busy helps them stay happy, healthy, and well-behaved.</p>
+  
+    <!-- Second image block -->
+    <div class="info-block">
+      <div class="info-text">
+        <h3>Finding the Right Job for Your Aussie</h3>
+        <p>Every Aussie is unique. Some live for hiking adventures, others thrive on agility courses, and some are happy couch cuddlers after a game of frisbee. The key is to discover what motivates your Aussie and nurture their talents in a positive, rewarding way.</p>
+        <p><strong>An Aussie with a job is an Aussie with a smile.</strong></p>
+      </div>
+      <div class="image-content">
+        <img src="images/site/happy.jpg" alt="Australian Shepherd working">
+        <p class="credit">Image: T. Whiter</p>
+      </div>
+    </div>
+  
+    
+  </div>
+  
+  <div id="right" class="content-area">
+    <h2>Is an Australian Shepherd Right for You?</h2>
+  
+  <div class="intro">
+    <p>✔️ You love an active, outdoor lifestyle</p>
+    <p>✔️ You have time for daily training, exercise, and mental stimulation</p>
+    <p>✔️ You want a loyal companion who loves to work and play</p>
+    <p>❌ They may not suit homes where owners are away for long hours without stimulation.</p>
+  </div>
+
+  <h3>✅ Checklist for Potential Owners</h3>
+  <ul>
+    <li><strong>✅ I have an active lifestyle and enjoy daily outdoor activities.</strong><br>
+    Aussies need at least 1–2 hours of exercise every single day — rain, hail, or shine!</li>
+
+    <li><strong>✅ I am ready to provide mental stimulation and training.</strong><br>
+    They're extremely intelligent and will get bored (and naughty!) without a “job” or regular learning challenges.</li>
+
+    <li><strong>✅ I want a dog that is loyal, attentive, and affectionate.</strong><br>
+    Aussies are famously devoted and often described as “Velcro dogs.”</li>
+
+    <li><strong>✅ I am patient and consistent with training.</strong><br>
+    They respond best to positive reinforcement but need consistent boundaries to thrive.</li>
+
+    <li><strong>✅ I am comfortable with a protective dog who may be reserved with strangers.</strong><br>
+    Aussies are natural watchdogs — not aggressive, but cautious until they know someone is “safe.”</li>
+
+    <li><strong>✅ I am willing to invest time in grooming and health care.</strong><br>
+    Weekly brushing (more during shedding season) and regular vet visits are necessary.</li>
+
+    <li><strong>✅ I can provide a safe, secure environment.</strong><br>
+    Aussies are agile and clever — they may jump fences or open gates if bored or curious.</li>
+
+    <li><strong>✅ I understand that Australian Shepherds are not couch potatoes.</strong><br>
+    While they love a cuddle, they’re working dogs at heart and need purpose.</li>
+  </ul>
+
+  <h3>🚫 Maybe Think Twice If...</h3>
+  <ul>
+    <li>🚫 I prefer a low-energy, independent dog.</li>
+    <li>🚫 I don't have time for daily exercise, training, or grooming.</li>
+    <li>🚫 I’m away from home for long hours most days.</li>
+    <li>🚫 I want a dog that is immediately friendly with every stranger.</li>
+  </ul>
+
+  <div class="final-thought">
+    <p><strong>Final Thought:</strong> Bringing an Australian Shepherd into your life means inviting a brilliant, devoted partner into your adventures — but also committing to meeting their high needs for activity, companionship, and stimulation. When you meet an Aussie’s needs, you’ll have a once-in-a-lifetime companion.</p>
+  </div>
+
+  <div class="aussie-images">
+    <h4>Meet Aussies of All Colors</h4>
+    <div class="image-grid">
+      <div class="image-item">
+        <p>Blue Merle</p>
+        <img src="images/site/blue merle.jpg" alt="Blue Merle Australian Shepherd Puppy">
+      </div>
+      <div class="image-item">
+        <p>Red Merle</p>
+        <img src="images/site/red merle.jpg" alt="Red Merle Australian Shepherd Puppy">
+      </div>
+      <div class="image-item">
+        <p>Black Tri</p>
+        <img src="images/site/black.jpg" alt="Black Australian Shepherd Puppy">
+      </div>
+      <div class="image-item">
+        <p>Red Tri</p>
+        <img src="images/site/red.jpg" alt="Red Australian Shepherd Puppy">
+      </div>
+    </div>
+    
+    
+    
+  </div>
+  </div>
+  
+
+<!-- Back to Top Button -->
+<button id="backToTop" onclick="scrollToTop()" title="Back to Top">↑</button>
+
+<!-- Footer -->
+<footer>
+    &copy; <span id="currentYear"></span> Australian Shepherd Club of the Western Cape. All rights reserved.
+  </footer>
+
+<script src="script.js"></script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Australian Shepherd Club of the Western Cape</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon/favicon.ico">
+<link rel="icon" type="image/png" href="images/favicon/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="images/favicon/favicon-32x32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="images/favicon/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" type="image/png" href="images/favicon/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="images/favicon/android-chrome-512x512.png" sizes="512x512">
+<link rel="manifest" href="images/favicon/site.webmanifest">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="gallery.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Layout style for the two columns */
+    .container {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px;
+    }
+    .left-column, .right-column {
+        width: 48%;
+        min-height: 400px; /* Ensure both columns have a minimum height */
+    }
+    .right-column img {
+        width: 100%;
+        max-width: 200px;
+        margin: 10px 0;
+    }
+</style>
+</head>
+<body>
+  <div class="bgimg-10">
+    <div class="caption">
+    <span class="border">IMAGE GALLERY</span>
+    </div>
+  </div>
+<!-- Loader -->
+<div id="loader">
+  <div class="spinner"></div>
+</div>
+
+<!-- Nav -->
+<nav>
+  <div class="logo">
+    <span class="club-logo">
+      <img src="logo.png" alt="Club Logo">
+    </span>
+    <span class="logo-text">Australian Shepherd Club of the<br>Western Cape</span>
+  </div>
+  <div class="hamburger" onclick="toggleMenu()" aria-expanded="false">
+    <div></div><div></div><div></div>
+  </div>
+  <ul id="navLinks">
+    <li><a href="index.html">Home</a></li>
+
+    <li class="dropdown">
+      <a href="about.html">About</a>
+      <ul class="dropdown-content">
+        <li><a href="about.html#history">Club History</a></li>
+        <li><a href="about.html#mission">Mission and Values</a></li>
+        <li><a href="about.html#team">Committee Team</a></li>
+      </ul>
+    </li>
+
+    <li class="dropdown">
+      <a href="aboutbreed.html">About the Breed</a>
+      <ul class="dropdown-content">
+        <li><a href="aboutbreed.html#auhistory">Aussie History</a></li>
+        <li><a href="aboutbreed.html#traits">Breed Traits</a></li>
+        <li><a href="aboutbreed.html#kusa">Kusa Breed Standard</a></li>
+        <li><a href="aboutbreed.html#living">Living with an Aussie</a></li>
+        <li><a href="aboutbreed.html#work">Work & Play</a></li>
+        <li><a href="aboutbreed.html#right">Is an Aussie Right for You?</a></li>
+      </ul>
+    </li>
+
+    <li class="dropdown">
+      <a href="events.html">Events</a>
+      <ul class="dropdown-content">
+        <li><a href="events.html#upcomming">Upcoming - Kusa Nationals</a></li>
+        <li><a href="events.html#events">Event Details</a></li>
+        <li><a href="events.html#past">Past Events & Results</a></li>
+        <li><a href="events.html#what">What to Expect at a Dog Show</a></li>
+      </ul>
+    </li>
+
+    <li class="dropdown">
+      <a href="membership.html">Membership</a>
+
+    </li>
+
+    <li class="dropdown">
+      <a href="breeders.html">Breeders</a>
+      <ul class="dropdown-content">
+        <li><a href="breeders.html#puppy">Puppy Buying Tips including Breeder Listing</a></li>
+        <li><a href="breeders.html#ethics">Ethical Behaviour of Breeders Who Register with KUSA</a></li>
+      </ul>
+    </li>
+
+    <li class="dropdown">
+      <a href="health.html">Health</a>
+      <ul class="dropdown-content">
+        <li><a href="health.html#health">Health Issues and What to Look Out For</a></li>
+      </ul>
+    </li>
+
+    <li class="dropdown">
+      <a href="grooming.html">Grooming</a>
+      <ul class="dropdown-content">
+        <li><a href="grooming.html#grooming">Grooming Needs</a></li>
+      </ul>
+    </li>
+
+    <li class="dropdown">
+      <a href="contact.html">Contact</a>
+      <ul class="dropdown-content">
+        <li><a href="contact.html#contact">General Contact Form</a></li>
+        <li><a href="contact.html#contact">Links to Email Addresses</a></li>
+        <li><a href="contact.html#contact">Assaro</a></li>
+        <li><a href="contact.html#contact">Kusa</a></li>
+      </ul>
+    </li>
+
+    <li class="dropdown">
+      <a href="gallery.html">Gallery</a>
+      <ul class="dropdown-content">
+        <li><a href="gallery.html#action">Dogs in Action</a></li>
+        <li><a href="gallery.html#shows">Show Dogs</a></li>
+      </ul>
+    </li>
+
+    <li><a href="sponsors.html">Sponsors</a></li>
+  </ul>
+</nav>
+
+
+  <div class="box-container">
+    <div class="info-box" data-target="action">Action Dogs!</div>
+    <div class="info-box" data-target="shows">Show Dogs!</div>
+    </div>
+
+    <div id="action" class="content-area">
+      <div class="gallery-container">
+        <div class="main-image-wrapper">
+          <button id="prev-action">&#10094;</button>
+          <img id="main-image-action" src="" alt="Gallery Image">
+          <button id="next-action">&#10095;</button>
+        </div>
+    
+        <div class="thumbnail-wrapper">
+          <button class="thumb-scroll left" id="thumb-left-action">&#10094;</button>
+          <div class="thumbnails" id="thumbnails-action"></div>
+          <button class="thumb-scroll right" id="thumb-right-action">&#10095;</button>
+        </div>
+      </div>
+    </div>
+    
+
+
+
+    <div id="shows" class="content-area">
+      <div class="gallery-container">
+        <div class="main-image-wrapper">
+          <button id="prev-action">&#10094;</button>
+          <img id="main-image-action" src="" alt="Gallery Image">
+          <button id="next-action">&#10095;</button>
+        </div>
+    
+        <div class="thumbnail-wrapper">
+          <button class="thumb-scroll left" id="thumb-left-action">&#10094;</button>
+          <div class="thumbnails" id="thumbnails-action"></div>
+          <button class="thumb-scroll right" id="thumb-right-action">&#10095;</button>
+        </div>
+      </div>
+    </div>
+    
+    
+
+
+      </body>
+
+
+<!-- Back to Top Button -->
+<button id="backToTop" onclick="scrollToTop()" title="Back to Top">↑</button>
+
+<!-- Footer -->
+<footer>
+    &copy; <span id="currentYear"></span> Australian Shepherd Club of the Western Cape. All rights reserved.
+  </footer>
+
+<script src="script.js"></script>
+<script src="gallery.js"></script>
+</div>
+
+
+
+</body>
+</html>

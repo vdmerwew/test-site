@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Australian Shepherd Club of the Western Cape</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon/favicon.ico">
+<link rel="icon" type="image/png" href="images/favicon/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="images/favicon/favicon-32x32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="images/favicon/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" type="image/png" href="images/favicon/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="images/favicon/android-chrome-512x512.png" sizes="512x512">
+<link rel="manifest" href="images/favicon/site.webmanifest">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="bgimg-4">
+    <div class="caption">
+    <span class="border">EVENTS HAPPENING</span>
+    </div>
+  </div>
+<!-- Loader -->
+<div id="loader">
+  <div class="spinner"></div>
+</div>
+
+<!-- Nav -->
+<nav>
+  <div class="logo">
+    <span class="club-logo">
+      <img src="logo.png" alt="Club Logo">
+    </span>
+    <span class="logo-text">Australian Shepherd Club of the<br>Western Cape</span>
+  </div>
+  <div class="hamburger" onclick="toggleMenu()" aria-expanded="false">
+    <div></div><div></div><div></div>
+  </div>
+  <ul id="navLinks">
+    <li><a href="index.html">Home</a></li>
+
+    <li class="dropdown">
+      <a href="about.html">About</a>
+      <ul class="dropdown-content">
+        <li><a href="about.html#history">Club History</a></li>
+        <li><a href="about.html#mission">Mission and Values</a></li>
+        <li><a href="about.html#team">Committee Team</a></li>
+      </ul>
+    </li>
+
+    <li class="dropdown">
+      <a href="aboutbreed.html">About the Breed</a>
+      <ul class="dropdown-content">
+        <li><a href="aboutbreed.html#auhistory">Aussie History</a></li>
+        <li><a href="aboutbreed.html#traits">Breed Traits</a></li>
+        <li><a href="aboutbreed.html#kusa">Kusa Breed Standard</a></li>
+        <li><a href="aboutbreed.html#living">Living with an Aussie</a></li>
+        <li><a href="aboutbreed.html#work">Work & Play</a></li>
+        <li><a href="aboutbreed.html#right">Is an Aussie Right for You?</a></li>
+      </ul>
+    </li>
+
+    <li class="dropdown">
+      <a href="events.html">Events</a>
+      <ul class="dropdown-content">
+        <li><a href="events.html#upcomming">Upcoming - Kusa Nationals</a></li>
+        <li><a href="events.html#events">Event Details</a></li>
+        <li><a href="events.html#past">Past Events & Results</a></li>
+        <li><a href="events.html#what">What to Expect at a Dog Show</a></li>
+      </ul>
+    </li>
+
+    <li class="dropdown">
+      <a href="membership.html">Membership</a>
+
+    </li>
+
+    <li class="dropdown">
+      <a href="breeders.html">Breeders</a>
+      <ul class="dropdown-content">
+        <li><a href="breeders.html#puppy">Puppy Buying Tips including Breeder Listing</a></li>
+        <li><a href="breeders.html#ethics">Ethical Behaviour of Breeders Who Register with KUSA</a></li>
+      </ul>
+    </li>
+
+    <li class="dropdown">
+      <a href="health.html">Health</a>
+      <ul class="dropdown-content">
+        <li><a href="health.html#health">Health Issues and What to Look Out For</a></li>
+      </ul>
+    </li>
+
+    <li class="dropdown">
+      <a href="grooming.html">Grooming</a>
+      <ul class="dropdown-content">
+        <li><a href="grooming.html#grooming">Grooming Needs</a></li>
+      </ul>
+    </li>
+
+    <li class="dropdown">
+      <a href="contact.html">Contact</a>
+      <ul class="dropdown-content">
+        <li><a href="contact.html#contact">General Contact Form</a></li>
+        <li><a href="contact.html#contact">Links to Email Addresses</a></li>
+        <li><a href="contact.html#contact">Assaro</a></li>
+        <li><a href="contact.html#contact">Kusa</a></li>
+      </ul>
+    </li>
+
+    <li class="dropdown">
+      <a href="gallery.html">Gallery</a>
+      <ul class="dropdown-content">
+        <li><a href="gallery.html#action">Dogs in Action</a></li>
+        <li><a href="gallery.html#shows">Show Dogs</a></li>
+      </ul>
+    </li>
+
+    <li><a href="sponsors.html">Sponsors</a></li>
+  </ul>
+</nav>
+
+
+  <div class="box-container">
+    <div class="info-box" data-target="upcomming">Events Calendar 2025</div>
+    <div class="info-box" data-target="events">Next Event</div>
+    <div class="info-box" data-target="past">Past Events and Results</div>
+    <div class="info-box" data-target="what">What to expect at a show</div>
+
+  </div>
+
+  <div id="upcomming" class="content-area">
+    <div class="kusa-box">
+        <a href="pdf/calendar2025.pdf" download target="_blank" style="text-decoration: none; color: inherit;">
+          <div class="kusa-content">
+            <h3>Events Calendar for 2025</h3>
+            <p>Click here to download the official PDF.</p>
+          </div>
+        </a>
+      </div>
+      
+
+   
+  </div>
+
+  <div id="events" class="content-area">
+    
+    <p><h3>KUSA Nationals 2025</h3> will take place at Wynberg Military Base from 28 May to 1 June. Come and watch the country’s top Australian Shepherds compete at the highest level! <strong>Please note:</strong> no pets are allowed — only dogs entered in the shows may be on the grounds.</p>
+
+</div>
+
+<div id="past" class="content-area table-container">
+  <table>
+    <h3>RESULTS TABLE</h3>
+    <thead>
+      <tr>
+        <th scope="col">Show Date</th>
+        <th scope="col">Venue</th>
+        <th scope="col">Judge</th>
+        <th scope="col">Best In Show</th>
+        <th scope="col">Reserve Best</th>
+        <th scope="col">Best Puppy</th>
+        <th scope="col">Best Junior</th>
+        <th scope="col">Best SA Bred</th>
+        <th scope="col">Best Veteran</th>
+        <th scope="col">Best Neuter</th>
+        <th scope="col" title="Best Baby Puppy in Show">Best Baby Puppy</th>
+        <th scope="col">CC Dog</th>
+        <th scope="col">CC Bitch</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>12/06/2021</td>
+        <td>OUDTSHOORN</td>
+        <td>MR M ANDERSON (SA)</td>
+        <td>VILLANYDA SUPER BOWL OF AROHAHILLS (ESP)</td>
+        <td>OBT A SONG OF FIRE AND ICE</td>
+        <td>OBT A SONG OF FIRE AND ICE</td>
+        <td>SHAMANDA HASHTAG JUST SAYING</td>
+        <td>LIASHASUE LA LANA</td>
+        <td>OBT INIVANDA TANGLED IN BLUE</td>
+        <td>NOORDBROOK THE RED RACER</td>
+        <td>N/A</td>
+        <td>OBT SONG OF FIRE AND ICE</td>
+        <td>AROHAHILLS THE STARS ALIGNED FOR ME</td>
+      </tr>
+      <tr>
+        <td>23/10/2021</td>
+        <td>STELLENBOSCH</td>
+        <td>MRS S IMPEY (SA)</td>
+        <td>VILLIANYDA HANDSOME ICE BEAR OF AROHA HILLS (ESP)</td>
+        <td>OBT BILLY JEAN</td>
+        <td>TALLIYA HERSHEYS KISSES</td>
+        <td>OBT A SONG OF FIRE AND ICE</td>
+        <td>AROHA HILLS FIRST CALLING OF CASLAINE</td>
+        <td>CWMBACH GOODNIGHT MOON OF TALLIYA</td>
+        <td>NOORDBROOK THE RED RACER</td>
+        <td>N/A</td>
+        <td>OBT SONG OF FIRE AND ICE</td>
+        <td>OBT BILLY JEAN</td>
+      </tr>
+      <tr>
+        <td>10/06/2022</td>
+        <td>OUDTSHOORN</td>
+        <td>MR R JUCKS (SA)</td>
+        <td>VILLANYDA SUPER BOWL OF AROHAHILLS (ESP)</td>
+        <td>AROHAHILLS THE FIRE INSIDE</td>
+        <td>OBT COURAGE UNDER FIRE AT ALFEN</td>
+        <td>GASPARI LINE ENRIK (IMP POL)</td>
+        <td>N/A</td>
+        <td>STAVROS WAX ON WAX OFF OF BREJEN</td>
+        <td>N/A</td>
+        <td>CHARISMA OPPORTUNITY KNOCKS</td>
+        <td>AROHAHILLS THE FIRE INSIDE</td>
+        <td>AROHAHILLS THE STARS ALIGNED FOR ME</td>
+      </tr>
+      <tr>
+        <td>23/10/2022</td>
+        <td>STELLENBOSCH</td>
+        <td>MR J HORSWELL (UK)</td>
+        <td>LIASHASUE ECHO IN THE VALLEY</td>
+        <td>VILLIANYDA HANDSOME ICE BEAR OF AROHA HILLS (ESP)</td>
+        <td>ACHANTE YOUNG DIAMND OF SHAMANDA</td>
+        <td>SHAMANDA LOVING THE LIMELIGHT</td>
+        <td>AROHA HILLS FIRST CALLING OF CASLAINE</td>
+        <td>LIASHASUE ECHO IN THE VALLEY</td>
+        <td>NOORDBROOK THE RED RACER</td>
+        <td>N/A</td>
+        <td>LIASHASUE ECHO IN THE VALLEY</td>
+        <td>TALLIYA TIRAMISU TORI</td>
+      </tr>
+      <tr>
+        <td>09/06/2023</td>
+        <td>OUDTSHOORN</td>
+        <td>MRS P DE CONING (SA)</td>
+        <td>OBT A SONG OF FIRE AND ICE</td>
+        <td>VILLANYDA BLUES ON THE BAYOU OF AROHA HILLS (ESP)</td>
+        <td>INIVANDA RAINBOW IN THE SKY</td>
+        <td>NUGGETA KASCARO OF MODAILENE (CZE)</td>
+        <td>OBT COURAGE UNDER FIRE OF ALFEN</td>
+        <td>VILLANYDA BLUES ON THE BAYOU OF AROHA HILLS (ESP)</td>
+        <td>N/A</td>
+        <td>N/A</td>
+        <td>OBT BENJAMIN BUTTON</td>
+        <td>VILLANYDA BLUES ON THE BAYOU OF AROHAHILLS (ESP)</td>
+      </tr>
+      <tr>
+        <td>21/10/2023</td>
+        <td>STELLENBOSCH</td>
+        <td>MRS P MCDERMID (FRA)</td>
+        <td>OBT A SONG OF FIRE AND ICE</td>
+        <td>ALLMARK THE SEQUEL (UK)</td>
+        <td>OBT HEART AND SOUL</td>
+        <td>INIVANDA RAINBOW IN THE SKY</td>
+        <td>OBT COURAGE UNDER FIRE OF ALFEN</td>
+        <td>ALLMARK THE SEQUEL (UK)</td>
+        <td>NOORDBROOK THE RED RACER</td>
+        <td>AROHAHILLS THE ONE AND ONLY</td>
+        <td>ALLMARK THE SEQUEL (UK)</td>
+        <td>ALLMARK FANCY SOME FENDI (UK)</td>
+      </tr>
+      <tr>
+        <td>14/06/2024</td>
+        <td>OUDTSHOORN</td>
+        <td>MS N REDTENBACHER (SA)</td>
+        <td>VILLANYDA SUPER BOWL OF AROHAHILLS (ESP)</td>
+        <td>OBT A SONG OF FIRE AND ICE</td>
+        <td>AROHAHILLS THE BOY WONDER</td>
+        <td>CHARISMA BECAUSE I'M BETHANY</td>
+        <td>OBT BENJAMIN BUTTON</td>
+        <td>VILLANYDA BLUES ON THE BAYOU OF AROHA HILLS (ESP)</td>
+        <td>NOORDBROOK THE RED RACER</td>
+        <td>N/A</td>
+        <td>ALLMARK THE SEQUEL (UK)</td>
+        <td>VILLANYDA BLUES ON THE BAYOU OF AROHAHILLS (ESP)</td>
+      </tr>
+      <tr>
+        <td>07/03/2025</td>
+        <td>KLEINMOND</td>
+        <td>DR R EHRLICH (SA)</td>
+        <td>OBT A SONG OF FIRE AND ICE</td>
+        <td>SHAMANDA CALL THE SHOTS</td>
+        <td>MODAILENE DARINA</td>
+        <td>SHAMANDA E EQUALS MC SQUARED</td>
+        <td>MODAILENE AILERI</td>
+        <td>ALLMARK THE SEQUEL (UK)</td>
+        <td>N/A</td>
+        <td>N/A</td>
+        <td>SHAMANDA E EQUALS MC SQUARED</td>
+        <td>TALLIYA LAPIS LAZULI</td>
+      </tr>
+      <tr>
+        <td>25/10/2025</td>
+        <td>STELLENBOSCH</td>
+        <td>INTERNATIONAL</td>
+        <td colspan="12">N/A</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+<div id="what" class="content-area">
+    <h3>Your First Dog Show: Some Basics and Helpful Advice</h3>
+  <p><strong>Author:</strong> G de Gouveia</p>
+
+  <div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
+    <!-- Text Section -->
+    <div style="flex: 1 1 300px;">
+      <p>
+        To enter your dog in a show, they typically need to be from a reputable breeder and registered with KUSA (Kennel Union of Southern Africa). 
+        You'll also need to pay a KUSA membership fee annually unless your dog is still registered under the breeder's name and you're entering them that way.
+      </p>
+  
+      <h2>Getting Prepared</h2>
+      <p>When your puppy is ready for the show ring, they'll be entered into a specific age category:</p>
+      <ul>
+        <li>Baby Puppy: 4–6 months</li>
+        <li>Minor Puppy: 6–9 months</li>
+        <li>Puppy: 9–12 months</li>
+        <li>Junior: 12–18 months</li>
+        <li>Graduate: 18–24 months</li>
+        <li>SA Bred</li>
+        <li>Open</li>
+        <li>Veteran</li>
+        <li>Champion</li>
+        <li>Neuter Dog</li>
+      </ul>
+    </div>
+  
+    <!-- Image Section -->
+    <div class="image-content" style="flex: 1 1 300px; text-align: center;">
+      <img src="images/site/show2.jpg" alt="Dog show image placeholder" style="max-width: 100%; height: auto;">
+      <p class="credit">Image: Facebook</p>
+    </div>
+  </div>
+  
+
+  <p>For Championship shows, remember that entries are done online with a firm closing date, so don't miss out!</p>
+  <p>You can find the entry link on <a href="https://www.showassist.co.za/" target="_blank">ShowAssist</a>.</p>
+  <p>Make sure to fill this out correctly and send it to the show secretary. Once your entry is submitted, the club secretary should email you to confirm receipt and let you know if everything is in order or if there are any issues.</p>
+
+  <p>For the day of the show, it's essential to bring shelter for yourself and your dog, like a tent, umbrella, or gazebo, as it can get quite hot.</p>
+
+  <p>Our breed, Australian Shepherds, belongs to the Herding group. Groups are usually judged alphabetically, so we'll generally be after Australian Cattle Dogs if any are entered.</p>
+
+  <p>When you hear "dogs," that refers to male dogs, and "bitches" means female dogs. In each age class, the "dogs" will be judged first, followed by the "bitches," starting from Baby Puppy through to Veteran.</p>
+
+  <h2>Inside the Ring</h2>
+  <p>The ring steward is your go-to person for any questions. They'll also call you into the ring by your entry number. Listen carefully, as they'll call your number up to three times. If you miss your call, your dog will be marked absent. The steward will guide you on where to go in the ring.</p>
+
+  <p>The judge will then assess each dog individually. They typically start by looking at the dog's head and then check the teeth. It's really helpful if you can teach your puppy to show their teeth or at least stand still while the judge examines their mouth – it takes practice! <strong>#patience</strong></p>
+
+  <p>Next, the judge will feel the dog's body, from the neck down, to evaluate their bone structure, angulation, and coat. They might also check under their paws and between their pads, which can be a bit ticklish for some dogs.</p>
+
+  <p>After that, the judge will check the dog's sex (males must be intact; females can be spayed) and then the tail, or the bob if they have a natural bobtail.</p>
+
+  <p>Once the individual examination is complete, the judge will ask you to do an "away and back." This means you need to run your dog in a straight line away from the judge and then back towards them, so they can see how your dog moves. After the "away and back," you'll usually be asked to move your dog around the ring to join the back of the line if there are other dogs in your class.</p>
+
+  <p>If you were judged first, the judge will then assess the other dogs in the class. Once they've seen all the dogs, they'll have you all move together again and will then award 1st, 2nd, and sometimes 3rd or 4th place.</p>
+
+  <p>If you win 1st place in your class, you'll need to go back into the ring to compete for "Best of Breed" within your specific breed. If your dog was the only one in their class, they automatically win the class.</p>
+
+  <p>Later, you'll be called back for the "Group Finals" (BIG - Best in Group), competing against the winners of all the other breeds within the Herding group, regardless of their age class. If you win 1st place in the Group Finals, you'll then proceed to "Best in Show," where you'll compete against the winners from all the other breed groups.</p>
+
+  <p><strong>Remember:</strong> the day is a success no matter where you place! Always let your dog know they're a winner – because to you, they are. This should be a fun experience, not overly competitive. While we all hope to win, our dogs don't need to feel that pressure.</p>
+
+  <p>Just a heads-up: like any competitive activity, dog shows can sometimes have their share of politics. My best advice is to stay in your own space and be mindful of who you become friendly with.</p>
+
+  <div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
+    <!-- Text Section -->
+    <div style="flex: 1 1 300px;">
+      <h2>Things You'll Need for the Show Day</h2>
+      <ul>
+        <li>Show lead</li>
+        <li>Number clip/holder</li>
+        <li>Neat outfit (think suit, skirt, jacket, and comfortable shoes)</li>
+        <li>Water for you and your dog</li>
+        <li>Water bowl</li>
+        <li>Treats for rewarding your dog</li>
+        <li>Poo bags</li>
+        <li>Crate or playpen for your dog's comfort</li>
+        <li>Grooming supplies: brush, cleaner, powder (if you use it), and scissors</li>
+      </ul>
+    </div>
+  
+    <!-- Image Section -->
+    <div class="image-content" style="flex: 1 1 300px; text-align: center;">
+      <img src="images/site/show11.jpg" alt="Show day items placeholder" style="max-width: 100%; height: auto;">
+      <p class="credit">Image: Facebook</p>
+    </div>
+  </div>
+  
+
+</div>
+
+<!-- Back to Top Button -->
+<button id="backToTop" onclick="scrollToTop()" title="Back to Top">↑</button>
+
+<!-- Footer -->
+<footer>
+    &copy; <span id="currentYear"></span> Australian Shepherd Club of the Western Cape. All rights reserved.
+  </footer>
+
+<script src="script.js"></script>
+
+
+
+</body>
+</html>

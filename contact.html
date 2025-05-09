@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Australian Shepherd Club of the Western Cape</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon/favicon.ico">
+<link rel="icon" type="image/png" href="images/favicon/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="images/favicon/favicon-32x32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="images/favicon/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" type="image/png" href="images/favicon/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="images/favicon/android-chrome-512x512.png" sizes="512x512">
+<link rel="manifest" href="images/favicon/site.webmanifest">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Layout style for the two columns */
+    .container {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px;
+    }
+    .left-column, .right-column {
+        width: 48%;
+        min-height: 400px; /* Ensure both columns have a minimum height */
+    }
+    .right-column img {
+        width: 100%;
+        max-width: 200px;
+        margin: 10px 0;
+    }
+</style>
+</head>
+<body>
+  <div class="bgimg-9">
+    <div class="caption">
+    <span class="border">CONTACT DETAILS</span>
+    </div>
+  </div>
+<!-- Loader -->
+<div id="loader">
+  <div class="spinner"></div>
+</div>
+
+<!-- Nav -->
+<nav>
+  <div class="logo">
+    <span class="club-logo">
+      <img src="logo.png" alt="Club Logo">
+    </span>
+    <span class="logo-text">Australian Shepherd Club of the<br>Western Cape</span>
+  </div>
+  <div class="hamburger" onclick="toggleMenu()" aria-expanded="false">
+    <div></div><div></div><div></div>
+  </div>
+  <ul id="navLinks">
+    <li><a href="index.html">Home</a></li>
+
+    <li class="dropdown">
+      <a href="about.html">About</a>
+      <ul class="dropdown-content">
+        <li><a href="about.html#history">Club History</a></li>
+        <li><a href="about.html#mission">Mission and Values</a></li>
+        <li><a href="about.html#team">Committee Team</a></li>
+      </ul>
+    </li>
+
+    <li class="dropdown">
+      <a href="aboutbreed.html">About the Breed</a>
+      <ul class="dropdown-content">
+        <li><a href="aboutbreed.html#auhistory">Aussie History</a></li>
+        <li><a href="aboutbreed.html#traits">Breed Traits</a></li>
+        <li><a href="aboutbreed.html#kusa">Kusa Breed Standard</a></li>
+        <li><a href="aboutbreed.html#living">Living with an Aussie</a></li>
+        <li><a href="aboutbreed.html#work">Work & Play</a></li>
+        <li><a href="aboutbreed.html#right">Is an Aussie Right for You?</a></li>
+      </ul>
+    </li>
+
+    <li class="dropdown">
+      <a href="events.html">Events</a>
+      <ul class="dropdown-content">
+        <li><a href="events.html#upcomming">Upcoming - Kusa Nationals</a></li>
+        <li><a href="events.html#events">Event Details</a></li>
+        <li><a href="events.html#past">Past Events & Results</a></li>
+        <li><a href="events.html#what">What to Expect at a Dog Show</a></li>
+      </ul>
+    </li>
+
+    <li class="dropdown">
+      <a href="membership.html">Membership</a>
+
+    </li>
+
+    <li class="dropdown">
+      <a href="breeders.html">Breeders</a>
+      <ul class="dropdown-content">
+        <li><a href="breeders.html#puppy">Puppy Buying Tips including Breeder Listing</a></li>
+        <li><a href="breeders.html#ethics">Ethical Behaviour of Breeders Who Register with KUSA</a></li>
+      </ul>
+    </li>
+
+    <li class="dropdown">
+      <a href="health.html">Health</a>
+      <ul class="dropdown-content">
+        <li><a href="health.html#health">Health Issues and What to Look Out For</a></li>
+      </ul>
+    </li>
+
+    <li class="dropdown">
+      <a href="grooming.html">Grooming</a>
+      <ul class="dropdown-content">
+        <li><a href="grooming.html#grooming">Grooming Needs</a></li>
+      </ul>
+    </li>
+
+    <li class="dropdown">
+      <a href="contact.html">Contact</a>
+      <ul class="dropdown-content">
+        <li><a href="contact.html#contact">General Contact Form</a></li>
+        <li><a href="contact.html#contact">Links to Email Addresses</a></li>
+        <li><a href="contact.html#contact">Assaro</a></li>
+        <li><a href="contact.html#contact">Kusa</a></li>
+      </ul>
+    </li>
+
+    <li class="dropdown">
+      <a href="gallery.html">Gallery</a>
+      <ul class="dropdown-content">
+        <li><a href="gallery.html#action">Dogs in Action</a></li>
+        <li><a href="gallery.html#shows">Show Dogs</a></li>
+      </ul>
+    </li>
+
+    <li><a href="sponsors.html">Sponsors</a></li>
+  </ul>
+</nav>
+
+
+<div id="contact" class="content-area">
+  <h1>Contact Us</h1>
+
+  <div class="contact-page-container">
+      <!-- Left Column: Contact Form -->
+      <div class="contact-form-column">
+        <form action="contact_form.php" method="POST">
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+      
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+      
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone"><br><br>
+      
+            <label for="message">Your Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+      
+            <label for="antispam">What is 3 + 4?</label><br>
+            <input type="text" id="antispam" name="antispam" required><br><br>
+      
+            <input type="submit" value="Submit">
+        </form>
+      </div>
+      
+
+      <!-- Right Column: Additional Contact Information -->
+      <div class="contact-info-column">
+          <h2>Contact Information</h2>
+
+          <div class="contact-info-item">
+              <p><strong>Follow us on Facebook:</strong></p>
+              <a href="https://www.facebook.com/people/Australian-Shepherd-Club-Western-Cape/100063854868558/" target="_blank">
+                  Australian Shepherd Club Western Cape
+              </a>
+          </div>
+
+          <div class="contact-info-item">
+              <p><strong>For those wishing to adopt an Aussie, kindly reach out to the Australian Shepherd South Africa Rescue Organisation:</strong></p>
+              <a href="https://www.facebook.com/australianshepherdsarescue/" target="_blank">
+                  Australian Shepherd SA Rescue
+              </a>
+              <br>
+              <a href="https://assaro.co.za/" target="_blank">ASSARO Website</a>
+          </div>
+
+          <div class="contact-info-item">
+              <p><strong>ASSARO Logo:</strong></p>
+              <img src="images/assaro.png" alt="ASSARO Logo" class="responsive-image" />
+          </div>
+
+          <div class="contact-info-item">
+              <p><strong>Visit the Kennel Union of Southern Africa (KUSA):</strong></p>
+              <a href="https://kusa.co.za/" target="_blank">Kennel Union of Southern Africa - KUSA</a>
+          </div>
+
+          <div class="contact-info-item">
+              <img src="images/kusa.jpeg" alt="KUSA Logo" class="responsive-image" />
+          </div>
+      </div>
+  </div>
+</div>
+
+    
+
+
+      </body>
+
+
+<!-- Back to Top Button -->
+<button id="backToTop" onclick="scrollToTop()" title="Back to Top">↑</button>
+
+<!-- Footer -->
+<footer>
+    &copy; <span id="currentYear"></span> Australian Shepherd Club of the Western Cape. All rights reserved.
+  </footer>
+
+<script src="script.js"></script>
+
+
+
+</body>
+</html>
